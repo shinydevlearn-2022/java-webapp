@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy to Apache') {
             steps {
-                sh 'cp target/java-webapplication.war /var/lib/tomcat9/webapps/'
+                sh 'cp target/java-webapplication.war /var/lib/apache-tomcat-9.0.99/webapps/'
             }
         }
     }
