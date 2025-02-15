@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy to Apache') {
             steps {
-                sh 'cp target/java-webapplication.war /opt/apache-tomcat-9.0.99/webapps'
+                sh 'sudo cp target/java-webapplication.war /opt/apache-tomcat-9.0.99/webapps'
             }
         }
     }
